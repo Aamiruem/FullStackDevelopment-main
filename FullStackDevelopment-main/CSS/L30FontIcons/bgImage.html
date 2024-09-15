@@ -1,0 +1,50 @@
+<!-- Individual CSS Background Properties:
+background-color: Defines the background color.
+background-image: Specifies one or more background images.
+background-position: Specifies the initial position of the background image.
+background-size: Defines the size of the background image.
+background-repeat: Defines how the background image repeats.
+background-attachment: Specifies whether the background image scrolls with the page or is fixed.
+background-origin: Specifies the area within which the background is applied (e.g., padding box, border box).
+background-clip: Specifies whether the background extends into the border or not.
+Example HTML and CSS code with explanations for all background properties:
+html
+Copy code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All CSS Background Properties Example</title>
+    <style>
+        body {
+            /* 
+            Using all individual background properties:
+            */
+            background-color: #f0f0f0; /* Light gray background color */
+            background-image: url('https://via.placeholder.com/800x600'), linear-gradient(to right, #4facfe, #00f2fe); /* Image and gradient */
+            background-position: top left, center; /* Position of first image is top left, gradient is centered */
+            background-size: auto, cover; /* Image uses its original size, gradient covers the entire element */
+            background-repeat: no-repeat, no-repeat; /* No repetition for both image and gradient */
+            background-attachment: fixed, scroll; /* First image is fixed, gradient scrolls with the page */
+            background-origin: padding-box; /* Background is positioned relative to the padding box */
+            background-clip: border-box; /* Background extends to the outer edge of the border */
+        }
+
+        .content {
+            padding: 20px;
+            margin: 50px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Hello World</h1>
+        <p>This is an example of using all the CSS background properties.</p>
+    </div>
+
+</body>
+</html>
